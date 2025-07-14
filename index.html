@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tailwind Layout</title>
   <link href="https://fonts.googleapis.com/css2?family=Satoshi:wght@500;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html, body {
       font-family: 'Satoshi', sans-serif;
       margin: 0;
       padding: 0;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
+      overflow-x: hidden;
     }
     * {
       box-sizing: border-box;
@@ -31,25 +30,25 @@
     }
   </style>
 </head>
-
 <body class="bg-[#1B1464]">
-  <!-- Container Wrapper -->
+  <!-- Main Container -->
   <div class="w-[1440px] mx-auto overflow-hidden">
-    <!-- Section: Hero and Navbar -->
-    <section class="w-[1440px] h-[800px] relative overflow-hidden">
+    <!-- Header Section: Navbar and Hero -->
+    <header class="w-[1440px] h-[800px] relative overflow-hidden">
       <!-- Navbar -->
       <nav class="w-full h-[112px] flex justify-between items-center px-[120px] py-[32px] bg-[#1B1464]">
         <div>
-          <h1 class="text-white text-[28px] font-extrabold tracking-wide">HireHub</h1>
+          <img src="images/logo.png" alt="HireHub Logo" class="w-[150px] h-auto" />
+
         </div>
-        <div class="flex gap-[36px]">
+        <div class="flex gap-[36px] items-center">
           <ul class="flex gap-[32px] text-white items-center">
             <li class="text-[18px] font-semibold"><a href="#">Job marketing</a></li>
             <li class="text-[18px] font-semibold"><a href="#">Blogs</a></li>
             <li class="text-[18px] font-semibold"><a href="#">Over ons</a></li>
             <li class="text-[18px] font-semibold"><a href="#">Contact</a></li>
           </ul>
-          <button class="bg-[#D84040] text-white px-4 py-2 rounded-full">
+          <button class="bg-[#D84040] text-white px-4 py-2 rounded-full font-medium">
             Meewerken
           </button>
         </div>
@@ -62,7 +61,7 @@
         </h1>
       </div>
 
-      <!-- Bottom White Box -->
+      <!-- Hero Call-to-Action Box -->
       <div class="absolute top-[631px] left-[120px] w-[600px] h-[169px] bg-white rounded-t-[50px] flex items-center justify-center overflow-hidden">
         <div class="w-[520px] h-[105px] bg-[#D84040] rounded-[90px] px-[64px] py-[32px] flex items-center justify-center">
           <button class="w-[269px] h-[36px] text-white text-[28px] leading-[36px] font-medium">
@@ -71,429 +70,287 @@
         </div>
       </div>
 
-      <!-- Right Side Box aligned with Hero Box -->
+      <!-- Hero Right Visual -->
       <div class="absolute top-[0px] left-[735px] w-[584px] h-[680px] rounded-[50px] overflow-hidden relative">
-        <!-- Full Background Image -->
         <img src="images/1.jpg" alt="Main Background" class="absolute inset-0 w-full h-full object-cover rounded-[50px]">
-        <!-- Inner Box 1 -->
         <div class="absolute top-[138px] left-[70px] w-[130px] h-[164px] bg-transparent rounded-md flex items-center justify-center">
           <img src="images/2.jpg" class="w-[114px] h-[114px] border-[6px] border-[#D84040] rounded-full animate-bounce-slow" alt="Inner Image 1">
         </div>
-        <!-- Inner Box 2 -->
         <div class="absolute top-[414px] left-[378px] w-[184px] h-[220px] bg-transparent rounded-md flex items-center justify-center">
           <img src="images/3.jpg" class="w-[168px] h-[168px] border-[6px] border-[#D84040] rounded-full animate-bounce-slow" alt="Inner Image 2">
         </div>
       </div>
 
-      <!-- Scroll Button -->
-      <div class="absolute top-[510px] left-[1238px] w-[52px] h-[266px] flex justify-center items-center">
-        <div class="w-[202px] h-[52px] transform -rotate-90 bg-white bg-opacity-20 px-[24px] py-[12px] rounded-[116.67px] flex items-center gap-[16px]">
-          <!-- Scroll Down Text -->
-          <span class="text-white font-[700] text-[20px] leading-[28px] font-satoshi">
-            Scroll down
-          </span>
-          <!-- Arrow Icon -->
-          <div class="w-[28px] h-[28px] flex justify-center items-center bg-white rounded-full">
-            <div class="w-[15.34px] h-[22.84px] bg-white"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section: Three Stat Boxes -->
-    <section class="w-[1440px] h-[382px] px-[120px] py-[80px] bg-white flex justify-between items-center overflow-hidden">
-      <!-- Box 1 -->
-      <div class="w-[400px] h-[222px] px-[80px] py-[56px] rounded-[100px] bg-white flex flex-col items-center gap-[10px]">
-        <div class="w-[186px] h-[76px] text-center text-[#1B1464] font-bold text-[56px] leading-[76px]">
-          4+ jaar
-        </div>
-        <div class="w-[240px] h-[24px] text-center text-[#1B1464] font-bold text-[16px] leading-[24px]">
-          Job marketing ervaring
-        </div>
-      </div>
-      <!-- Box 2 -->
-      <div class="w-[400px] h-[222px] px-[80px] py-[56px] rounded-[100px] bg-white flex flex-col items-center gap-[10px]">
-        <div class="w-[186px] h-[76px] text-center text-[#1B1464] font-bold text-[56px] leading-[76px]">
-          4+ jaar
-        </div>
-        <div class="w-[240px] h-[24px] text-center text-[#1B1464] font-bold text-[16px] leading-[24px]">
-          Job marketing ervaring
-        </div>
-      </div>
-      <!-- Box 3 -->
-      <div class="w-[400px] h-[222px] px-[80px] py-[56px] rounded-[100px] bg-white flex flex-col items-center gap-[10px]">
-        <div class="w-[186px] h-[76px] text-center text-[#1B1464] font-bold text-[56px] leading-[76px]">
-          4+ jaar
-        </div>
-        <div class="w-[240px] h-[24px] text-center text-[#1B1464] font-bold text-[16px] leading-[24px]">
-          Job marketing ervaring
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 3: Custom Recruitment -->
-    <section class="w-[1440px] h-[661px] flex justify-between items-center px-[120px] py-[60px] bg-white">
-      <!-- Left Side Images -->
-      <div class="relative w-[677px] h-[541px] rounded-[50px] overflow-hidden">
-        <!-- Main Left Image -->
-        <img src="images/4.jpg" alt="Main Visual" class="w-[677px] h-[541px] object-cover rounded-[50px]">
-        <!-- Component 1 (Red Box Group) -->
-        <div class="absolute top-0 left-[40px] w-[255.38px] h-[231.25px] z-[2]">
-          <!-- Vector 2 (middle box) -->
-          <div class="absolute top-[8.22%] bottom-[26.92%] left-[29.37%] right-[38.52%] w-[68.73px] h-[125.72px] bg-[#D84040] border-[8px] border-white rounded-[26px]">
-          </div>
-          <!-- Vector 3 (right box - rotated +30deg) -->
-          <div class="absolute top-[0%] bottom-[45.63%] left-[52.08%] right-[21.01%] w-[68.73px] h-[125.72px] bg-[#D84040] border-[8px] border-white rounded-[26px]" style="transform: rotate(30deg);">
-          </div>
-          <!-- Vector 4 (left box - rotated -30deg) -->
-          <div class="absolute top-[38.05%] bottom-[7.58%] left-[0%] right-[73.09%] w-[68.73px] h-[125.72px] bg-[#D84040] border-[8px] border-white rounded-[26px]" style="transform: rotate(-30deg);">
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Side Text Content -->
-      <div class="flex flex-col gap-[48px] w-[433px] h-[504px] text-[#1B1464]">
-        <!-- Title -->
-        <h2 class="w-[404px] h-[168px] font-[700] text-[48px] leading-[56px] font-satoshi">
-          Werven op Maat: Onze Reis naar Jouw ideale team
-        </h2>
-        <!-- Description -->
-        <p class="w-[433px] h-[288px] font-[700] text-[16px] leading-[24px] font-satoshi text-[#1B1464]">
-          Ben jij op zoek naar die ideale aanvulling voor jouw team, iemand die niet alleen de juiste vaardigheden heeft, maar ook perfect past binnen de unieke cultuur van jouw bedrijf? Wij begrijpen hoe cruciaal het is om de juiste mensen aan boord te halen en daarom zijn wij hier.<br><br>
-          Bij ons staat ontzorging centraal. Terwijl wij jouw wervingscampagne beheren en advies geven, kun jij je concentreren op andere belangrijke aspecten van jouw bedrijf. Wij houden je continu op de hoogte, zodat je precies weet waar je aan toe bent en wanneer je de beste kandidaten kunt verwachten.
-        </p>
-      </div>
-    </section>
-
-
-
-
-
-    <!-- Active Search Section -->
-    <section class="w-[1440px] h-[837px] bg-white relative flex px-[120px] py-[60px] justify-between items-start overflow-hidden">
-      <!-- Left Text Content -->
-      <div class="w-[458px] h-[544px] flex flex-col gap-[64px] mt-[146px]">
-        <!-- Heading -->
-        <h2 class="w-[458px] h-[112px] font-bold text-[48px] leading-[56px] text-[#1B1464] capitalize">
-          Niet passief maar actief op zoek!
-        </h2>
-        <!-- Paragraph -->
-        <p class="w-[458px] h-[264px] font-bold text-[16px] leading-[24px] text-[#1B1464]">
-          Vergeet billboards, de radio en de krant. We spenderen in Nederland dagelijks gemiddeld meer dan 2,5 uur op Social Media. Van jong tot oud. En dat wordt alleen maar meer. Omgerekend zijn dat 38(!) volle dagen van 24 uur per jaar! Laat dat maar even bezinken.<br><br>
-          Het is dus geen kwestie van "of" we de doelgroep bereiken, maar "hoe". Facebook, Instagram, LinkedIn, Pinterest, Snapchat of TikTok? Wij weten precies welke kanalen we het beste in kunnen zetten om jouw ideale kandidaat te bereiken. Mét de juiste boodschap.
-        </p>
-      
-        <!-- Button -->
-        <!-- Button -->
-        <button class="w-[200px] h-[56px] bg-[rgba(216,64,64,1)] rounded-[62px] px-[32px] py-[16px] text-white font-medium text-[16px] leading-[24px] flex items-center justify-center gap-[10px]">
-          <span class="h-[24px] text-white font-medium text-[16px] leading-[24px] whitespace-nowrap">Vervul mijn vacatures</span>
-        </button>
-      </div>
-
-            <!-- Right Visual Content -->
-      <div class="relative w-[654px] h-[692px]">
-        <!-- Background Circles -->
-        <div class="absolute top-[53px] left-[39px] w-[100px] h-[100px] bg-[#1B1464] rounded-full opacity-50"></div>
-        <div class="absolute top-[45px] left-[78px] w-[246px] h-[246px] bg-[#D84040] rounded-full opacity-50"></div>
-        <div class="absolute top-[600px] left-[582px] w-[72px] h-[72px] bg-[#1B1464] rounded-full opacity-50"></div>
-        <div class="absolute top-[560px] left-[504px] w-[100px] h-[100px] bg-[#D84040] rounded-full opacity-50"></div>
-        <!-- Layered Images -->
-        <img src="images/5.png" class="absolute top-0 left-[395px] w-[258.68px] h-[637.52px] object-cover z-[1]" alt="Layer 1" style="opacity: 1; transform: rotate(0deg);" />
-        <img src="images/6.png" class="absolute top-[9.65px] left-[400.29px] w-[223.51px] h-[615.42px] object-cover z-[2]" alt="Layer 2" style="opacity: 1; transform: rotate(0deg);" />
-
-
-        <!-- Layer 4 -->
-        <img src="images/8.png" class="absolute top-[84.6px] left-[138.06px] w-[271.99px] h-[585.61px] object-cover z-[4]" alt="Layer 4" style="opacity: 1; transform: rotate(0deg);" />
-        <!-- Layer 5 (nested inside Layer 4) -->
-        <img src="images/9.png" class="absolute top-[84.6px] left-[138.06px] w-[270px] h-[580px] object-cover z-[5]" alt="Layer 5" style="opacity: 1; transform: rotate(0deg);" />
      
+    </header>
 
+    <!-- Main Content -->
+    <main>
+      <!-- Section: Statistics -->
+      <section class="w-[1440px] h-[382px] px-[120px] py-[80px] bg-white flex justify-between items-center overflow-hidden">
+        <div class="w-[400px] h-[222px] px-[80px] py-[56px] rounded-[100px] bg-white flex flex-col items-center gap-[10px]">
+          <div class="w-[186px] h-[76px] text-center text-[#1B1464] font-bold text-[56px] leading-[76px]">
+            4+ jaar
+          </div>
+          <div class="w-[240px] h-[24px] text-center text-[#1B1464] font-bold text-[16px] leading-[24px]">
+            Job marketing ervaring
+          </div>
+        </div>
+        <div class="w-[400px] h-[222px] px-[80px] py-[56px] rounded-[100px] bg-white flex flex-col items-center gap-[10px]">
+          <div class="w-[186px] h-[76px] text-center text-[#1B1464] font-bold text-[56px] leading-[76px]">
+           116+
+          </div>
+          <div class="w-[240px] h-[24px] text-center text-[#1B1464] font-bold text-[16px] leading-[24px]">
+            Tevreden klanten
+          </div>
+        </div>
+        <div class="w-[400px] h-[222px] px-[80px] py-[56px] rounded-[100px] bg-white flex flex-col items-center gap-[10px]">
+          <div class="w-[186px] h-[76px] text-center text-[#1B1464] font-bold text-[56px] leading-[76px]">
+            749+
+          </div>
+          <div class="w-[240px] h-[24px] text-center text-[#1B1464] font-bold text-[16px] leading-[24px]">
+            vervulde vecatures
+          </div>
+        </div>
+      </section>
 
-        <!-- Floating Transparent Box -->
-<!-- Floating Transparent Box -->
-        <div class="absolute top-[460px] w-[334px] h-[170px] z-[6]">
-          <div class="w-[334px] h-[130px] rounded-[15px] border border-[#E0E0E0] p-[20px] bg-white bg-opacity-100 flex flex-col gap-[10px]">
-            <!-- Mail Header -->
-            <div class="flex items-center gap-[10px] w-[294px] h-[40px]">
-              <img src="images/10.png" class="w-[38px] h-[38px] rounded-full" alt="User">
-              <div class="w-[246px] h-[40px]">
-                <p class="w-[164px] h-[20px] text-[15px] font-semibold leading-[20px] tracking-[-0.4px] text-black font-[SF Pro]">
-                  Mail
-                </p>
-                <p class="w-[246px] h-[20px] text-[15px] font-medium leading-[20px] tracking-[-0.4px] text-black font-[SF Pro]">
-                  Van Socialcruit
-                </p>
+      <!-- Section: Custom Recruitment -->
+      <section class="w-[1440px] h-[661px] flex justify-between items-center px-[120px] py-[60px] bg-white">
+        <div class="relative w-[677px] h-[541px] rounded-[50px] overflow-hidden">
+          <img src="images/4.jpg" alt="Main Visual" class="w-[677px] h-[541px] object-cover rounded-[50px]">
+          
+        </div>
+        <div class="flex flex-col gap-[48px] w-[433px] h-[504px] text-[#1B1464]">
+          <h2 class="w-[404px] h-[168px] font-[700] text-[48px] leading-[56px] font-satoshi">
+            Werven op Maat: Onze Reis naar Jouw ideale team
+          </h2>
+          <p class="w-[433px] h-[288px] font-[700] text-[16px] leading-[24px] font-satoshi text-[#1B1464]">
+            Ben jij op zoek naar die ideale aanvulling voor jouw team, iemand die niet alleen de juiste vaardigheden heeft, maar ook perfect past binnen de unieke cultuur van jouw bedrijf? Wij begrijpen hoe cruciaal het is om de juiste mensen aan boord te halen en daarom zijn wij hier.<br><br>
+            Bij ons staat ontzorging centraal. Terwijl wij jouw wervingscampagne beheren en advies geven, kun jij je concentreren op andere belangrijke aspecten van jouw bedrijf. Wij houden je continu op de hoogte, zodat je precies weet waar je aan toe bent en wanneer je de beste kandidaten kunt verwachten.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section: Active Search -->
+      <section class="w-[1440px] h-[837px] bg-white relative flex px-[120px] py-[60px] justify-between items-start overflow-hidden">
+        <div class="w-[458px] h-[544px] flex flex-col gap-[64px] mt-[146px]">
+          <h2 class="w-[458px] h-[112px] font-bold text-[48px] leading-[56px] text-[#1B1464] capitalize">
+            Niet passief maar actief op zoek!
+          </h2>
+          <p class="w-[458px] h-[264px] font-bold text-[16px] leading-[24px] text-[#1B1464]">
+            Vergeet billboards, de radio en de krant. We spenderen in Nederland dagelijks gemiddeld meer dan 2,5 uur op Social Media. Van jong tot oud. En dat wordt alleen maar meer. Omgerekend zijn dat 38(!) volle dagen van 24 uur per jaar! Laat dat maar even bezinken.<br><br>
+            Het is dus geen kwestie van "of" we de doelgroep bereiken, maar "hoe". Facebook, Instagram, LinkedIn, Pinterest, Snapchat of TikTok? Wij weten precies welke kanalen we het beste in kunnen zetten om jouw ideale kandidaat te bereiken. Mét de juiste boodschap.
+          </p>
+          <button class="w-[200px] h-[56px] bg-[#D84040] rounded-[62px] px-[32px] py-[16px] text-white font-medium text-[16px] leading-[24px] flex items-center justify-center gap-[10px]">
+            <span class="h-[24px] text-white font-medium text-[16px] leading-[24px] whitespace-nowrap">Vervul mijn vacatures</span>
+          </button>
+        </div>
+        <div class="relative w-[654px] h-[692px]">
+          <div class="absolute top-[53px] left-[39px] w-[100px] h-[100px] bg-[#1B1464] rounded-full opacity-50"></div>
+          <div class="absolute top-[45px] left-[78px] w-[246px] h-[246px] bg-[#D84040] rounded-full opacity-50"></div>
+          <div class="absolute top-[600px] left-[582px] w-[72px] h-[72px] bg-[#1B1464] rounded-full opacity-50"></div>
+          <div class="absolute top-[560px] left-[504px] w-[100px] h-[100px] bg-[#D84040] rounded-full opacity-50"></div>
+          <img src="images/5.png" class="absolute top-0 left-[395px] w-[258.68px] h-[637.52px] object-cover z-[1]" alt="Layer 1" style="opacity: 1; transform: rotate(0deg);" />
+          <img src="images/6.png" class="absolute top-[9.65px] left-[400.29px] w-[223.51px] h-[615.42px] object-cover z-[2]" alt="Layer 2" style="opacity: 1; transform: rotate(0deg);" />
+          <img src="images/8.png" class="absolute top-[84.6px] left-[138.06px] w-[271.99px] h-[585.61px] object-cover z-[4]" alt="Layer 4" style="opacity: 1; transform: rotate(0deg);" />
+          <img src="images/9.png" class="absolute top-[84.6px] left-[138.06px] w-[270px] h-[580px] object-cover z-[5]" alt="Layer 5" style="opacity: 1; transform: rotate(0deg);" />
+          <div class="absolute top-[460px] w-[334px] h-[170px] z-[6]">
+            <div class="w-[334px] h-[130px] rounded-[15px] border border-[#E0E0E0] p-[20px] bg-white bg-opacity-100 flex flex-col gap-[10px]">
+              <div class="flex items-center gap-[10px] w-[294px] h-[40px]">
+                <img src="images/10.png" class="w-[38px] h-[38px] rounded-full" alt="User">
+                <div class="w-[246px] h-[40px]">
+                  <p class="w-[164px] h-[20px] text-[15px] font-semibold leading-[20px] tracking-[-0.4px] text-black font-[SF Pro]">
+                    Mail
+                  </p>
+                  <p class="w-[246px] h-[20px] text-[15px] font-medium leading-[20px] tracking-[-0.4px] text-black font-[SF Pro]">
+                    Van Socialcruit
+                  </p>
+                </div>
               </div>
+              <p class="w-[294px] h-[40px] text-[15px] font-normal leading-[20px] tracking-[-0.4px] text-black font-[SF Pro]">
+                We zullen blij zijn om met u samen te werken. Nu heb je 9 sollicitanten!
+              </p>
             </div>
-            <!-- Message -->
-            <p class="w-[294px] h-[40px] text-[15px] font-normal leading-[20px] tracking-[-0.4px] text-black font-[SF Pro]">
-              We zullen blij zijn om met u samen te werken. Nu heb je 9 sollicitanten!
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Collaborations -->
+      <section class="w-[1440px] h-[248px] bg-[#1B1464] pt-[80px] pr-[120px] pb-[80px] pl-[120px] flex items-center overflow-hidden">
+        <div class="w-[479px] h-[88px] flex flex-col gap-[8px]">
+          <h2 class="w-[479px] h-[56px] text-[48px] font-[400] leading-[56px] text-white font-[Satoshi Variable] transform-none opacity-100">
+            Onze samenwerkingen
+          </h2>
+          <p class="w-[381px] h-[24px] text-[16px] font-[400] leading-[24px] text-white font-[Satoshi Variable] transform-none opacity-100">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </p>
+        </div>
+      </section>
+
+      <!-- Section: Sliding Images -->
+      <section class="w-[1440px] h-[181px] bg-white relative overflow-hidden">
+        <div id="imageContainer" class="w-[3282px] h-[117px] absolute top-[32px] left-[-60px] flex opacity-100 transform-none">
+          <div class="relative w-[133px] h-[77px] top-[20px]">
+            <img src="images/20.png" alt="Image 1" class="w-[172px] h-[80px] absolute top-[18.5px] left-[233px] opacity-100 transform-none">
+          </div>
+          <div class="relative w-[133px] h-[77px] top-[20px]">
+            <img src="images/21.png" alt="Image 2" class="w-[168px] h-[77px] absolute top-[20px] left-[505px] opacity-100 transform-none">
+          </div>
+          <div class="relative w-[133px] h-[77px] top-[-5.09px] left-[-33.82px]">
+            <img src="images/20.png" alt="Image 3" class="w-[165.28px] h-[116.54px] absolute top-0 left-0 opacity-100 transform-none">
+          </div>
+          <div class="relative w-[133px] h-[77px] top-[2.5px] left-[970px]">
+            <img src="images/21.png" alt="Image 4" class="w-[112px] h-[112px] absolute top-0 left-0 opacity-100 transform-none">
+          </div>
+          <div class="relative w-[133px] h-[77px] top-[8.5px] left-[1182px]">
+            <img src="images/21.png" alt="Image 5" class="w-[167px] h-[100px] absolute top-0 left-0 opacity-100 transform-none">
+          </div>
+          <div class="relative w-[133px] h-[77px] left-[1449px]">
+            <img src="images/20.png" alt="Image 6" class="w-[142px] h-[117px] absolute top-0 left-0 opacity-100 transform-none">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Why Effective -->
+      <section class="w-[1440px] h-[944px] bg-white p-[120px] flex justify-between overflow-hidden">
+        <div class="w-[550px] h-[704px] flex flex-col gap-[48px]">
+          <div class="w-[550px] h-[88px] flex flex-col gap-[8px]">
+            <h2 class="text-[36px] font-[800] leading-[44px] text-black font-[Satoshi Variable] transform-none opacity-100">
+              Waarom is dit effectief?
+            </h2>
+            <p class="w-[393px] h-[24px] text-[16px] font-[500] leading-[24px] text-black font-[Satoshi Variable] transform-none opacity-100">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+          <div class="w-[524px] h-[568px] flex flex-col gap-[56px]">
+            <p class="text-[16px] font-[700] leading-[24px] text-black font-[Satoshi Variable] transform-none opacity-100">
+              Onze aanpak concentreert zich op de verborgen talenten - diegenen die niet actief op zoek waren naar nieuwe kansen, maar die door onze campagnes worden geboeid. Via sociale media richten we ons op deze passieve doelgroep, wat resulteert in een veel groter bereik, wel tot 70% meer dan traditionele vacatureplatforms.<br><br>
+              Onze op maat gemaakte wervingscampagnes opereren als een verlengstuk van jouw identiteit en stijl. Dit genereert niet alleen zichtbaarheid, maar biedt ook een persoonlijke benadering die mensen spontaan aanspreekt.<br><br>
+              Het resultaat? Een nieuwe bron van (potentieel) personeel, waarbij we binnen dezelfde dag contact leggen. We voeren een grondige screening uit om te verzekeren dat ze aan jouw eisen voldoen. Zo krijg je alleen sollicitanten die perfect passen bij jouw positie én waarbij het contact al warm is.<br><br>
+              Onze methode maakt het proces efficiënter, doeltreffender, en focust op het aantrekken van de beste kandidaten voor jouw team.
+            </p>
+          </div>
+          <div class="w-[374px] h-[56px] flex gap-[12px]">
+            <button class="w-[200px] h-[56px] bg-[#D84040] rounded-[62px] px-[32px] flex items-center justify-center gap-[10px]">
+              <span class="text-[16px] font-medium leading-[24px] text-white font-[Satoshi Variable] whitespace-nowrap">
+                Vervul mijn vacatures
+              </span>
+            </button>
+            <button class="w-[162px] h-[56px] bg-transparent rounded-[2px] pt-[16px] pr-[32px] pb-[16px] pl-[32px] flex items-center justify-center gap-[10px]">
+              <span class="w-[98px] h-[24px] text-[16px] font-[700] leading-[24px] text-black font-[Satoshi Variable] transform-none opacity-100">
+                Ontdek meer
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="w-[580px] h-[704px] rounded-[100px] relative overflow-hidden">
+          <img src="images/11 (2).jpg" alt="Main Image" class="w-[580px] h-[704px] object-cover">
+          <div class="w-[219px] h-[120px] absolute top-[-20px] right-[-40px] flex items-center justify-center overflow-visible">
+            <div class="w-[219px] h-[72px] bg-white rounded-[100px] border-[5px] border-[#D84040] pt-[20px] pr-[28px] pb-[20px] pl-[20px] flex items-center gap-[12px] shadow-lg">
+              <div class="w-[26.67px] h-[26.67px] bg-gray-300"></div>
+              <span class="text-[20px] font-bold leading-[32px] text-[#1B1464] font-[Satoshi Variable] whitespace-nowrap">
+                Tijd besparen
+              </span>
+            </div>
+          </div>
+          <div class="w-[205px] h-[120px] absolute bottom-[-40px] left-[-40px] flex items-center justify-center overflow-visible">
+            <div class="w-[205px] h-[72px] bg-white rounded-[100px] border-[5px] border-[#D84040] pt-[20px] pr-[28px] pb-[20px] pl-[20px] flex items-center gap-[12px] shadow-lg">
+              <div class="w-[21.33px] h-[26.67px] bg-gray-300"></div>
+              <span class="text-[20px] font-bold leading-[32px] text-[#1B1464] font-[Satoshi Variable] whitespace-nowrap">
+                Snel Zoeken
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Benefits -->
+      <section class="flex flex-col items-center bg-white">
+        <div class="flex gap-[20px]">
+          <div class="flex flex-col w-[594px] gap-[20px] justify-center text-center mx-[56px] mb-[56px] mt-[120px]">
+            <div class="mx-auto"><img src="images/snel.svg" alt="Snelheid"></div>
+            <h1 class="font-semibold text-[32px]">SNELHEID EN EFFICIÊNTIE</h1>
+            <p class="mx-auto font-semibold text-[16px] w-[482px]">
+              Door de kracht van social media te combineren met recruitment, leveren we snel hoogwaardige kandidaten, waardoor kostbare vacaturetijd wordt geminimaliseerd.
+            </p>
+          </div>
+          <div class="flex flex-col w-[594px] gap-[20px] justify-center text-center mx-[56px] mb-[56px] mt-[120px]">
+            <div class="mx-auto"><img src="images/KOST.svg" alt="Kostenbesparend"></div>
+            <h1 class="font-semibold text-[32px]">KOSTENBESPAREND</h1>
+            <p class="mx-auto font-semibold text-[16px] w-[405px]">
+              Doordat we de kracht van social media en recruitment koppelen, kunnen we de kosten besparen tot wel 50% vergeleken met andere methodes.
             </p>
           </div>
         </div>
-      </div>
+        <div class="flex gap-[20px]">
+          <div class="flex flex-col w-[594px] gap-[20px] justify-center text-center mx-[56px] mt-[56px] mb-[120px]">
+            <div class="mx-auto"><img src="images/MAAT.svg" alt="Maatwerk"></div>
+            <h1 class="font-semibold text-[32px]">MAATWERK</h1>
+            <p class="mx-auto font-semibold text-[16px] w-[418px]">
+              Door onze flexibiliteit kunnen wij ons goed aanpassen aan de wensen en processen van onze klanten en maatwerk leveren.
+            </p>
+          </div>
+          <div class="flex flex-col w-[594px] gap-[20px] justify-center text-center mx-[56px] mt-[56px] mb-[120px]">
+            <div class="mx-auto"><img src="images/CONT.svg" alt="Controle"></div>
+            <h1 class="font-semibold text-[32px]">CONTROLE EN TRANSPARANTIE</h1>
+            <p class="mx-auto font-semibold text-[16px] w-[406px]">
+              Met SocialCruit behoud je de controle over het wervingsproces en heb je transparantie in elke stap, wat resulteert in een beter begrip van de voortgang.
+            </p>
+          </div>
+        </div>
+      </section>
 
-
-    </section>
-
-
-
-<!-- Section 5: Onze samenwerkingen -->
-<!-- Section 5: Onze samenwerkingen -->
-<section class="w-[1440px] h-[248px] bg-[rgba(27,20,100,1)] pt-[80px] pr-[120px] pb-[80px] pl-[120px] flex items-center overflow-hidden">
-  <div class="w-[479px] h-[88px] flex flex-col gap-[8px]">
-    <!-- Heading -->
-    <h2 class="w-[479px] h-[56px] text-[48px] font-[400] leading-[56px] text-white font-[Satoshi Variable] transform-none opacity-100">
-      Onze samenwe
-    </h2>
-
-    <!-- Subtext -->
-    <p class="w-[381px] h-[24px] text-[16px] font-[400] leading-[24px] text-white font-[Satoshi Variable] transform-none opacity-100">
-      Lorem ipsum dolor sit amet, consectetur adipiscing
-    </p>
-  </div>
-</section>
-
-
-
-<!-- Section: Sliding Images -->
-  <section class="w-[1440px] h-[181px] bg-[rgba(255,255,255,1)] relative overflow-hidden">
-    <div id="imageContainer" class="w-[3282px] h-[117px] absolute top-[32px] left-[-60px] flex opacity-100 transform-none">
-      <!-- Image 1 -->
-      <div class="relative w-[133px] h-[77px] top-[20px]">
-        <img src="images/1.jpg" alt="Image 1" class="w-[172px] h-[80px] absolute top-[18.5px] left-[233px] opacity-100 transform-none">
-      </div>
-      <!-- Image 2 -->
-      <div class="relative w-[133px] h-[77px] top-[20px]">
-        <img src="images/2.jpg" alt="Image 2" class="w-[168px] h-[77px] absolute top-[20px] left-[505px] opacity-100 transform-none">
-      </div>
-      <!-- Image 3 -->
-      <div class="relative w-[133px] h-[77px] top-[-5.09px] left-[-33.82px]">
-        <img src="images/3.jpg" alt="Image 3" class="w-[165.2828826904297px] h-[116.53813171386719px] absolute top-0 left-0 opacity-100 transform-none">
-      </div>
-      <!-- Image 4 -->
-      <div class="relative w-[133px] h-[77px] top-[2.5px] left-[970px]">
-        <img src="images/4.jpg" alt="Image 4" class="w-[112px] h-[112px] absolute top-0 left-0 opacity-100 transform-none">
-      </div>
-      <!-- Image 5 -->
-      <div class="relative w-[133px] h-[77px] top-[8.5px] left-[1182px]">
-        <img src="images/5.png" alt="Image 5" class="w-[167px] h-[100px] absolute top-0 left-0 opacity-100 transform-none">
-      </div>
-      <!-- Image 6 -->
-      <div class="relative w-[133px] h-[77px] left-[1449px]">
-        <img src="images/6.png" alt="Image 6" class="w-[142px] h-[117px] absolute top-0 left-0 opacity-100 transform-none">
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-  <!-- Section -->
-  <!-- Section -->
-  <section class="w-[1440px] h-[944px] bg-white p-[120px] flex justify-between overflow-hidden">
-
-    <!-- Left Box -->
-    <div class="w-[550px] h-[704px] flex flex-col gap-[48px]">
-      <!-- Top Box -->
-      <div class="w-[550px] h-[88px] flex flex-col gap-[8px]">
-        <!-- Inner Text Box (Waarom is dit effectief?) -->
-        <div class="w-[550px] h-[56px] bg-[rgba(255,255,255,1)]">
-        <h2 class="text-[36px] font-[800] leading-[44px] text-black font-[Satoshi Variable] transform-none opacity-100">
-          Waarom is dit effectief?
-        </h2>
-      </div>
-        <!-- Subtext (Lorem ipsum...) -->
-        <div class="w-[393px] h-[24px] bg-[rgba(255,255,255,1)]">
-          <p class="text-[16px] font-[500] leading-[24px] text-black font-[Satoshi Variable] transform-none opacity-100">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      <!-- Section: Call to Action -->
+      <section class="flex gap-[20px] justify-center bg-white">
+        <div class="w-[340px]"><img src="images/left.png" alt="Left Image"></div>
+        <div class="w-[720px] rounded-[5rem] flex flex-col gap-[64px] justify-center items-center border border-1 border-black">
+          <p class="text-[48px] text-center w-[489px] h-[168px] font-semibold text-[#1B1464] leading-tight">
+            Waardeer je je tijd? Delegeer de moeilijke processen!
           </p>
-        </div>
-      </div>
-      <!-- Middle Box (Content) -->
-      <div class="w-[524px] h-[568px] flex flex-col gap-[56px]">
-        <div class="w-[524px] h-[456px] bg-[rgba(255,255,255,1)]">
-          <p class="text-[16px] font-[700] leading-[24px] text-black font-[Satoshi Variable] transform-none opacity-100">
-            Onze aanpak concentreert zich op de verborgen talenten - diegenen die niet actief op zoek waren naar nieuwe kansen, maar die door onze campagnes worden geboeid. Via sociale media richten we ons op deze passieve doelgroep, wat resulteert in een veel groter bereik, wel tot 70% meer dan traditionele vacatureplatforms.<br><br>
-            Onze op maat gemaakte wervingscampagnes opereren als een verlengstuk van jouw identiteit en stijl. Dit genereert niet alleen zichtbaarheid, maar biedt ook een persoonlijke benadering die mensen spontaan aanspreekt.<br><br>
-            Het resultaat? Een nieuwe bron van (potentieel) personeel, waarbij we binnen dezelfde dag contact leggen. We voeren een grondige screening uit om te verzekeren dat ze aan jouw eisen voldoen. Zo krijg je alleen sollicitanten die perfect passen bij jouw positie én waarbij het contact al warm is.<br><br>
-            Onze methode maakt het proces efficiënter, doeltreffender, en focust op het aantrekken van de beste kandidaten voor jouw team.
+          <p class="text-[16px] text-center w-[365px] font-semibold text-[#1B1464]">
+            Ons bedrijf zal je helpen de beste medewerkers te vinden met de vereiste vaardigheden en ruime ervaring in de kortst mogelijke tijd.
           </p>
+          <button class="bg-[#D84040] text-white px-[32px] py-[16px] rounded-full font-medium">
+            Vervul mijn vacatures
+          </button>
         </div>
-      </div>
-      <!-- Bottom Box (Buttons) -->
-      <div class="w-[374px] h-[56px] flex gap-[12px]">
-        <!-- Button 1 (Vervul mijn vacatures) -->
-        <button class="w-[200px] h-[56px] bg-[rgba(216,64,64,1)] rounded-[62px] px-[32px] flex items-center justify-center gap-[10px]">
-        <span class="text-[16px] font-medium leading-[24px] text-white font-[Satoshi Variable] whitespace-nowrap">
-          Vervul mijn vacatures
-        </span>
-      </button>
+        <div class="w-[340px]"><img src="images/right.png" alt="Right Image"></div>
+      </section>
+    </main>
 
-        <!-- Button 2 (Ontdek meer) -->
-        <button class="w-[162px] h-[56px] bg-transparent rounded-[2px] pt-[16px] pr-[32px] pb-[16px] pl-[32px] flex items-center justify-center gap-[10px]">
-          <span class="w-[98px] h-[24px] text-[16px] font-[700] leading-[24px] text-black font-[Satoshi Variable] transform-none opacity-100">
-            Ontdek meer
-          </span>
-        </button>
-      </div>
-    </div>
-
-        <!-- Right Box -->
-    <div class="w-[580px] h-[704px] rounded-[100px] relative overflow-hidden">
-      <!-- Main Image -->
-      <img src="images/11 (2).jpg" alt="Main Image" class="w-[580px] h-[704px] object-cover">
-
-  <!-- Top Right Box (Tijd besparen) -->
-  <div class="w-[219px] h-[120px] absolute top-[-20px] right-[-40px] flex items-center justify-center overflow-visible">
-    <div class="w-[219px] h-[72px] bg-white rounded-[100px] border-[5px] border-[rgba(216,64,64,1)] pt-[20px] pr-[28px] pb-[20px] pl-[20px] flex items-center gap-[12px] shadow-lg">
-      <div class="w-[26.67px] h-[26.67px] bg-gray-300"></div>
-      <span class="text-[20px] font-bold leading-[32px] text-[#1B1464] font-[Satoshi Variable] whitespace-nowrap">
-        Tijd besparen
-      </span>
-    </div>
-  </div>
-
-  <!-- Bottom Left Box (Snel Zoeken) -->
-  <div class="w-[205px] h-[120px] absolute bottom-[-40px] left-[-40px] flex items-center justify-center overflow-visible">
-    <div class="w-[205px] h-[72px] bg-white rounded-[100px] border-[5px] border-[rgba(216,64,64,1)] pt-[20px] pr-[28px] pb-[20px] pl-[20px] flex items-center gap-[12px] shadow-lg">
-      <div class="w-[21.33px] h-[26.67px] bg-gray-300"></div>
-      <span class="text-[20px] font-bold leading-[32px] text-[#1B1464] font-[Satoshi Variable] whitespace-nowrap">
-        Snel Zoeken
-      </span>
-    </div>
-  </div>
-
-    </div>
-
-
-    <!-- JavaScript for Button Toggle -->
-    <script>
-      const buttons = document.querySelectorAll('button');
-      buttons.forEach(button => {
-        let isVisible = true;
-        button.addEventListener('click', () => {
-          const parentBox = button.closest('div.w-[219px].h-[120px]');
-          if (parentBox) {
-            isVisible = !isVisible;
-            parentBox.style.height = isVisible ? '120px' : '0px';
-            parentBox.style.opacity = isVisible ? '1' : '0';
-          }
-        });
-      });
-    </script>
-  </section>
-
-  <section>
-    <div class="flex flex-col items-center bg-white">
-
-      <div class="flex gap-[20px]">
-        <div class="flex flex-col w-[594px] gap-[20px] justify-center text-center mx-[56px] mb-[56px] mt-[120px]">
-          <div class="mx-auto"><img src="images/snel.svg" alt=""></div>
-          <h1 class="font-semibold text-[32px]">SNELHEID EN EFFICIÊNTIE</h1>
-          <p class="mx-auto font-semibold text-[16px] w-[482px]">Door de kracht van social media te combineren met
-            recruitment, leveren we snel hoogwaardige kandidaten, waardoor kostbare vacaturetijd wordt geminimaliseerd.
-          </p>
-        </div>
-        <div class="flex flex-col w-[594px] gap-[20px] justify-center text-center mx-[56px] mb-[56px] mt-[120px]">
-          <div class="mx-auto"><img src="images/KOST.svg" alt=""></div>
-          <h1 class="font-semibold text-[32px]">KOSTENBESPAREND</h1>
-          <p class="mx-auto font-semibold text-[16px] w-[405px]">Doordat we de kracht van social media en recruitment
-            koppelen, kunnen we de kosten besparen tot wel 50% vergeleken met andere methodes.</p>
-        </div>
-      </div>
-      <div class="flex gap-[20px] ">
-        <div class="flex flex-col w-[594px] gap-[20px] justify-center text-center mx-[56px] mt-[56px] mb-[120px]">
-          <div class="mx-auto"><img src="images/MAAT.svg" alt=""></div>
-          <h1 class="font-semibold text-[32px]">MAATWERK</h1>
-          <p class="mx-auto font-semibold text-[16px] w-[418px]">Door onze flexibiliteit kunnen wij ons goed aanpassen
-            aan de wensen en processen van onze klanten en maatwerk leveren.</p>
-        </div>
-        <div class="flex flex-col w-[594px] gap-[20px] justify-center text-center mx-[56px]  mt-[56px] mb-[120px]">
-          <div class="mx-auto"><img src="images/CONT.svg" alt=""></div>
-          <h1 class="font-semibold text-[32px]">CONTROLE EN TRANSPARANTIE</h1>
-          <p class="mx-auto font-semibold text-[16px] w-[406px]">Met SocialCruit behoud je de controle over het
-            wervingsproces en heb je transparantie in elke stap, wat resulteert in een beter begrip van de voortgang.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="flex gap-[20px] justify-center bg-white">
-      <div class="w-[340px]"><img src="images/left.png" alt=""></div>
-      <div
-        class="w-[720px] rounded-[5rem] flex flex-col gap-[64px] justify-center items-center  border border-1 border-black">
-        <p class="text-[48px] text-center w-[489px] h-[168px] font-semibold text-[#1B1464] leading-tight ">
-          Waardeer je je tijd? Delegeer de moeilijke processen!
-        </p>
-        <p class="text-[16px] text-center w-[365px] font-semibold text-[#1B1464]">
-          Ons bedrijf zal je helpen de beste medewerkers te vinden met de vereiste vaardigheden en ruime ervaring in de
-          kortst mogelijke tijd.
-        </p>
-        <button class="bg-[#D84040] text-white px-[32px] py-[16px] rounded-full">
-          Vervul mijn vacatures
-        </button>
-      </div>
-      <div class="w-[340px]"><img src="images/right.png" alt=""></div>
-    </div>
-  </section>
-
-  <sections>
-    <footer class="text-white mt-[120px] ">
-      <div class="bg-[#1B1464] px-[120px] py-[80px] w-full  mx-auto flex flex-col md:flex-row justify-between gap-12">
-        <!-- Left Section: Logo & Contact -->
+    <!-- Footer Section -->
+    <footer class="text-white mt-[120px]">
+      <div class="bg-[#1B1464] px-[120px] py-[80px] w-full mx-auto flex flex-col md:flex-row justify-between gap-12">
         <div class="flex flex-col gap-[40px]">
           <h1 class="text-3xl font-bold flex items-center gap-1">
-            <img src="images/logo.png" alt="">
+            <img src="images/logo.png" alt="Logo">
           </h1>
           <div class="flex flex-col gap-[12px]">
             <div class="flex items-center gap-[8px]">
-              <svg class="fill-gray-400" width="18.000000" height="18.000000" viewBox="0 0 18 18" fill="none"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <desc>
-                  Created with Pixso.
-                </desc>
-                <defs />
-                <path id="call"
-                  d="M16.95 18C14.86 18 12.8 17.54 10.77 16.63C8.74 15.72 6.89 14.44 5.22 12.77C3.55 11.1 2.27 9.25 1.36 7.22C0.45 5.19 0 3.13 0 1.05C0 0.75 0.1 0.5 0.3 0.3C0.5 0.1 0.75 0 1.05 0L5.1 0C5.33 0 5.54 0.07 5.72 0.23C5.9 0.39 6.01 0.58 6.05 0.8L6.69 4.3C6.73 4.56 6.72 4.79 6.67 4.97C6.62 5.15 6.53 5.31 6.39 5.44L3.97 7.89C4.3 8.51 4.7 9.11 5.16 9.68C5.62 10.26 6.12 10.81 6.67 11.35C7.19 11.86 7.73 12.34 8.3 12.78C8.86 13.22 9.46 13.63 10.1 14L12.45 11.64C12.6 11.5 12.79 11.38 13.03 11.31C13.27 11.23 13.51 11.21 13.75 11.25L17.2 11.95C17.43 12.01 17.62 12.13 17.77 12.31C17.92 12.48 18 12.68 18 12.89L18 16.95C18 17.25 17.89 17.5 17.7 17.7C17.5 17.89 17.25 18 16.95 18ZM3.02 6L4.67 4.35L4.25 2L2.02 2C2.1 2.68 2.22 3.35 2.37 4.02C2.52 4.69 2.74 5.35 3.02 6ZM11.97 14.95C12.62 15.23 13.28 15.45 13.96 15.62C14.63 15.79 15.31 15.89 16 15.95L16 13.75L13.64 13.27L11.97 14.95Z"
-                  fill-opacity="1.000000" fill-rule="nonzero" />
+              <svg class="fill-gray-400" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="call" d="M16.95 18C14.86 18 12.8 17.54 10.77 16.63C8.74 15.72 6.89 14.44 5.22 12.77C3.55 11.1 2.27 9.25 1.36 7.22C0.45 5.19 0 3.13 0 1.05C0 0.75 0.1 0.5 0.3 0.3C0.5 0.1 0.75 0 1.05 0L5.1 0C5.33 0 5.54 0.07 5.72 0.23C5.9 0.39 6.01 0.58 6.05 0.8L6.69 4.3C6.73 4.56 6.72 4.79 6.67 4.97C6.62 5.15 6.53 5.31 6.39 5.44L3.97 7.89C4.3 8.51 4.7 9.11 5.16 9.68C5.62 10.26 6.12 10.81 6.67 11.35C7.19 11.86 7.73 12.34 8.3 12.78C8.86 13.22 9.46 13.63 10.1 14L12.45 11.64C12.6 11.5 12.79 11.38 13.03 11.31C13.27 11.23 13.51 11.21 13.75 11.25L17.2 11.95C17.43 12.01 17.62 12.13 17.77 12.31C17.92 12.48 18 12.68 18 12.89L18 16.95C18 17.25 17.89 17.5 17.7 17.7C17.5 17.89 17.25 18 16.95 18ZM3.02 6L4.67 4.35L4.25 2L2.02 2C2.1 2.68 2.22 3.35 2.37 4.02C2.52 4.69 2.74 5.35 3.02 6ZM11.97 14.95C12.62 15.23 13.28 15.45 13.96 15.62C14.63 15.79 15.31 15.89 16 15.95L16 13.75L13.64 13.27L11.97 14.95Z" fill-opacity="1.000000" fill-rule="nonzero" />
               </svg>
-
               <p>0618393693</p>
             </div>
-
-            <div class="flex items-center gap-[8px] ">
-              <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <desc>
-                  Created with Pixso.
-                </desc>
-                <defs />
-                <path class="fill-gray-400" id="alternate_email"
-                  d="M10 20C8.61 20 7.31 19.73 6.1 19.21C4.88 18.68 3.82 17.97 2.92 17.07C2.02 16.17 1.31 15.11 0.78 13.89C0.26 12.68 0 11.38 0 10C0 8.61 0.26 7.31 0.78 6.1C1.31 4.88 2.02 3.82 2.92 2.92C3.82 2.02 4.88 1.31 6.1 0.78C7.31 0.26 8.61 0 10 0C11.38 0 12.68 0.26 13.89 0.78C15.11 1.31 16.17 2.02 17.07 2.92C17.97 3.82 18.68 4.88 19.21 6.1C19.73 7.31 20 8.61 20 10L20 11.45C20 12.43 19.66 13.27 18.98 13.96C18.31 14.65 17.48 15 16.5 15C15.91 15 15.36 14.87 14.85 14.62C14.33 14.37 13.89 14.01 13.55 13.55C13.06 14.03 12.52 14.39 11.91 14.63C11.3 14.87 10.66 15 10 15C8.61 15 7.43 14.51 6.46 13.53C5.48 12.56 5 11.38 5 10C5 8.61 5.48 7.43 6.46 6.46C7.43 5.48 8.61 5 10 5C11.38 5 12.56 5.48 13.53 6.46C14.51 7.43 15 8.61 15 10L15 11.45C15 11.88 15.14 12.25 15.42 12.55C15.7 12.85 16.06 13 16.5 13C16.93 13 17.29 12.85 17.57 12.55C17.85 12.25 18 11.88 18 11.45L18 10C18 7.76 17.22 5.87 15.67 4.32C14.12 2.77 12.23 2 10 2C7.76 2 5.87 2.77 4.32 4.32C2.77 5.87 2 7.76 2 10C2 12.23 2.77 14.12 4.32 15.67C5.87 17.22 7.76 18 10 18L15 18L15 20L10 20ZM10 13C10.83 13 11.54 12.7 12.12 12.12C12.7 11.54 13 10.83 13 10C13 9.16 12.7 8.45 12.12 7.87C11.54 7.29 10.83 7 10 7C9.16 7 8.45 7.29 7.87 7.87C7.29 8.45 7 9.16 7 10C7 10.83 7.29 11.54 7.87 12.12C8.45 12.7 9.16 13 10 13Z"
-                  fill-opacity="1.000000" fill-rule="nonzero" />
+            <div class="flex items-center gap-[8px]">
+              <svg class="fill-gray-400" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="alternate_email" d="M10 20C8.61 20 7.31 19.73 6.1 19.21C4.88 18.68 3.82 17.97 2.92 17.07C2.02 16.17 1.31 15.11 0.78 13.89C0.26 12.68 0 11.38 0 10C0 8.61 0.26 7.31 0.78 6.1C1.31 4.88 2.02 3.82 2.92 2.92C3.82 2.02 4.88 1.31 6.1 0.78C7.31 0.26 8.61 0 10 0C11.38 0 12.68 0.26 13.89 0.78C15.11 1.31 16.17 2.02 17.07 2.92C17.97 3.82 18.68 4.88 19.21 6.1C19.73 7.31 20 8.61 20 10L20 11.45C20 12.43 19.66 13.27 18.98 13.96C18.31 14.65 17.48 15 16.5 15C15.91 15 15.36 14.87 14.85 14.62C14.33 14.37 13.89 14.01 13.55 13.55C13.06 14.03 12.52 14.39 11.91 14.63C11.3 14.87 10.66 15 10 15C8.61 15 7.43 14.51 6.46 13.53C5.48 12.56 5 11.38 5 10C5 8.61 5.48 7.43 6.46 6.46C7.43 5.48 8.61 5 10 5C11.38 5 12.56 5.48 13.53 6.46C14.51 7.43 15 8.61 15 10L15 11.45C15 11.88 15.14 12.25 15.42 12.55C15.7 12.85 16.06 13 16.5 13C16.93 13 17.29 12.85 17.57 12.55C17.85 12.25 18 11.88 18 11.45L18 10C18 7.76 17.22 5.87 15.67 4.32C14.12 2.77 12.23 2 10 2C7.76 2 5.87 2.77 4.32 4.32C2.77 5.87 2 7.76 2 10C2 12.23 2.77 14.12 4.32 15.67C5.87 17.22 7.76 18 10 18L15 18L15 20L10 20ZM10 13C10.83 13 11.54 12.7 12.12 12.12C12.7 11.54 13 10.83 13 10C13 9.16 12.7 8.45 12.12 7.87C11.54 7.29 10.83 7 10 7C9.16 7 8.45 7.29 7.87 7.87C7.29 8.45 7 9.16 7 10C7 10.83 7.29 11.54 7.87 12.12C8.45 12.7 9.16 13 10 13Z" fill-opacity="1.000000" fill-rule="nonzero" />
               </svg>
-              <p class="text-[16px] ">info@socialcruit.nl</p>
+              <p class="text-[16px]">info@socialcruit.nl</p>
             </div>
           </div>
           <div class="flex gap-4 mt-4 text-xl">
-            <a href="#"><img src="images/youtube.svg" alt=""></a>
-            <a href="#"><img src="images/fb.svg" alt=""></a>
-            <a href="#"><img src="images/X.svg" alt=""></a>
+            <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+            <a href="#"><img src="images/fb.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/X.svg" alt="X"></a>
           </div>
         </div>
-
-        <!-- Middle Section: Links -->
         <div class="flex flex-col gap-4 text-center text-[26px] font-semibold">
           <a href="#">Algemene voorwaarden</a>
           <a href="#">Job marketing</a>
           <a href="#">Contact</a>
           <a href="#">Blogs</a>
         </div>
-
-        <!-- Right Section: Address & Numbers -->
         <div class="text-right space-y-[24px]">
           <div>
             <p class="uppercase text-sm text-gray-400">Zanddonkweg 1</p>
@@ -509,10 +366,7 @@
           </div>
         </div>
       </div>
-
-      <!-- Bottom Bar -->
-      <div
-        class="text-sm px-[120px] py-[16px] flex flex-col md:flex-row justify-between items-center text-gray-400 bg-[#0E0847]">
+      <div class="text-sm px-[120px] py-[16px] flex flex-col md:flex-row justify-between items-center text-gray-400 bg-[#0E0847]">
         <p>©socialcruit 2024. All rights reserved</p>
         <div class="flex gap-2 text-gray-400">
           <a href="#" class="hover:underline">Privacy policy</a>
@@ -521,38 +375,39 @@
         </div>
       </div>
     </footer>
-
-  </sections>
-
-
-
-
-
-
-
-
   </div>
 
-
-
+  <!-- JavaScript for Sliding Images and Button Toggle -->
   <script>
+    // Sliding Images
     const container = document.getElementById('imageContainer');
     let position = 0;
-    const speed = 1; // Adjust speed as needed
-    const maxLeft = container.offsetWidth - 1440; // Maximum left position to keep images visible
+    const speed = 1;
+    const maxLeft = container.offsetWidth - 1440;
 
     function slideImages() {
       position -= speed;
       if (position <= -maxLeft) {
-        position = 0; // Reset to start when reaching the end
+        position = 0;
       }
       container.style.left = position + 'px';
       requestAnimationFrame(slideImages);
     }
-
-    // Start the animation
     slideImages();
+
+    // Button Toggle for Why Effective Section
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+      let isVisible = true;
+      button.addEventListener('click', () => {
+        const parentBox = button.closest('div.w-[219px].h-[120px], div.w-[205px].h-[120px]');
+        if (parentBox) {
+          isVisible = !isVisible;
+          parentBox.style.height = isVisible ? '120px' : '0px';
+          parentBox.style.opacity = isVisible ? '1' : '0';
+        }
+      });
+    });
   </script>
 </body>
-
 </html>
